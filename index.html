@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>AppsOnline Documentation</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">AppsOnline Documentation</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#appsonline-complete-user-guide-support-manual" class="nav-link">AppsOnline — Complete User Guide &amp; Support Manual</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-getting-started-with-the-web-workspace" class="nav-link">1. Getting Started with the Web Workspace</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-managing-your-persistent-file-storage" class="nav-link">2. Managing Your Persistent File Storage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-advanced-troubleshooting-and-connection-fixes" class="nav-link">3. Advanced Troubleshooting and Connection Fixes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="appsonline-complete-user-guide-support-manual">AppsOnline — Complete User Guide &amp; Support Manual</h1>
+<p>Welcome to the official documentation manual for <strong>AppsOnline</strong> (<code>appsonline.dpdns.org</code>). This guide details our platform capabilities, storage configurations, and common technical fixes to ensure a smooth cloud streaming experience.</p>
+<hr />
+<h2 id="1-getting-started-with-the-web-workspace">1. Getting Started with the Web Workspace</h2>
+<p>AppsOnline streams isolated operating system environments straight to your browser using advanced canvas compression protocols. To get optimal performance, please follow these core environment guidelines:</p>
+<ul>
+<li>
+<p><strong>Recommended Browsers:</strong> For the lowest possible input delay, we recommend using <strong>Google Chrome, Brave, or Mozilla Firefox</strong>. Ensure your browser is fully updated to the latest stable release.</p>
+</li>
+<li>
+<p><strong>Input Control Integration:</strong> Your mouse and keyboard inputs are tracked natively.</p>
+</li>
+<li>
+<p>To trigger a standard desktop right-click inside a container, simply use your regular physical mouse right-click.</p>
+</li>
+<li>
+<p>If you are accessing the platform on a touchscreen mobile device, long-press on the element to open context menus.</p>
+</li>
+</ul>
+<hr />
+<h2 id="2-managing-your-persistent-file-storage">2. Managing Your Persistent File Storage</h2>
+<p>By default, anonymous public sessions operate on a strict zero-persistence framework—all files are securely destroyed on tab close. To keep your work saved across multiple sessions, you must utilize our persistent storage layer:</p>
+<ul>
+<li>
+<p><strong>Sign In:</strong> Click the <strong>Sign In</strong> handle on the main menu dashboard and authenticate safely via our <strong>GitHub OAuth / Cloudflare Access</strong> secure gateway.</p>
+</li>
+<li>
+<p><strong>Locate the Cloud Folder:</strong> Once your workspace initializes, open the system file explorer inside your Linux or Windows container.</p>
+</li>
+<li>
+<p><strong>The Target Directory:</strong> Look for the designated folder path labeled <strong>cloud-storage/</strong>. This folder links directly to a secure, isolated <strong>Amazon S3 storage bucket</strong> assigned to your developer token.</p>
+</li>
+<li>
+<p><strong>Saving Work:</strong> Any code repositories, text documents, or graphics configurations you save directly inside this specific directory will persist safely. When you log back in during a future session, your files will remount automatically.</p>
+</li>
+</ul>
+<hr />
+<h2 id="3-advanced-troubleshooting-and-connection-fixes">3. Advanced Troubleshooting and Connection Fixes</h2>
+<h3 id="error-err_connection_refused-or-page-loading-loops">🛑 Error: "ERR_CONNECTION_REFUSED" or Page Loading Loops</h3>
+<p>If the main launcher interface fails to load on your residential network (such as Frontier Home Fiber) but opens instantly on cellular data, your router's security protocols are blocking the stream.</p>
+<ul>
+<li>
+<p><strong>The Fix:</strong> Open your router's administration interface (e.g., your Amazon Eero mobile app) and temporarily turn off "Advanced Security Script Filters" or "Ad-Blocking Toggles" that might flag public custom dynamic subdomains (<code>*.dpdns.org</code>).</p>
+</li>
+<li>
+<p><strong>Flush Local Cache:</strong> Open your computer terminal and execute <code>ipconfig /flushdns</code> to clear old network records.</p>
+</li>
+</ul>
+<h3 id="stream-freezes-or-stutters">⏳ Stream Freezes or Stutters</h3>
+<p>Because AppsOnline delivers real-time high-fidelity video streams, minor packet drops on your Wi-Fi will cause temporary interface stutters.</p>
+<ul>
+<li><strong>The Fix:</strong> Click the hidden streaming sidebar arrow on the left-hand margin of your container screen. Under <strong>Streaming Settings</strong>, drop your visual quality profile from "High Definition" down to "Medium" or "Automatic". This switches the canvas compression to compress the data faster, dropping latency instantly over slower connections.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2026-11-10 01:55:11.175876+00:00
+-->
