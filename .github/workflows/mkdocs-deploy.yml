@@ -13,12 +13,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: echo "cache-key = $(date -u +%V)" >> $GITHUB_STEP_SUMMARY
-      - uses: actions/cache@v4
-        with:
-          path: .cache
-          key: mkdocs-${{ hashFiles('mkdocs.yml') }}
-          restore-keys: |
-            mkdocs-
       - run: pip install mkdocs-material mkdocs
       - run: mkdocs gh-deploy --force
